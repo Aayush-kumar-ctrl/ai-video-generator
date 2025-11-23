@@ -6,69 +6,8 @@
     <title>Puter AI Video Generator</title>
 
     <script src="https://js.puter.com/v2/"></script>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background: #f8f8f8;
-            transition: 0.2s;
-        }
-        .dark {
-            background: #121212;
-            color: #f0f0f0;
-        }
-        .container {
-            max-width: 700px;
-            margin: auto;
-        }
-        input {
-            width: 100%;
-            padding: 14px;
-            font-size: 17px;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            border: 1px solid #aaa;
-        }
-        button {
-            padding: 12px 20px;
-            font-size: 16px;
-            background: #0078ff;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            cursor: pointer;
-        }
-        #loader {
-            display: none;
-            font-size: 18px;
-            text-align: center;
-            margin: 15px 0;
-        }
-        video {
-            width: 100%;
-            border-radius: 12px;
-            margin-top: 20px;
-        }
-        .history video {
-            width: 180px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        .dark-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 8px 16px;
-            border-radius: 6px;
-            background: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <button class="dark-toggle" onclick="toggleDark()">🌙 Dark Mode</button>
