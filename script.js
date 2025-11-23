@@ -22,6 +22,14 @@
     }
     loadHistory();
 
+    //delete history
+    document.getElementById("clearHistoryBtn").addEventListener("click", () => {
+    if (confirm("Are you sure you want to clear all video history?")) {
+        localStorage.removeItem("video-history");   // delete stored history
+        document.getElementById("historyContainer").innerHTML = ""; // clear UI
+    }
+    });
+
     // SAVE HISTORY
     function saveToHistory(url) {
         let saved = JSON.parse(localStorage.getItem("video-history") || "[]");
